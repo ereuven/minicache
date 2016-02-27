@@ -6,7 +6,7 @@ dependencies = ['enum34']
 setup(
     name='minicache',
     version='1.0',
-    description='Python memoray cache',
+    description='Python memory cache',
     author='Reuven',
     author_email='reuven@linux.com',
     url='',
