@@ -1,4 +1,5 @@
 from distutils.core import setup
+from sys import argv
 
 dependencies = ['enum34']
 
@@ -14,9 +15,9 @@ setup(
 )
 
 try:
-    import pip
-
-    [pip.main(['install', dep]) for dep in dependencies]
+    if 'install' in argv:
+        import pip
+        [pip.main(['install', dep]) for dep in dependencies]
 except:
     print "Can't find pip, please install dependencies manually."
     print 'Dependencies:', ','.join(dependencies)
