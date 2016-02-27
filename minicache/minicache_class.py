@@ -66,6 +66,8 @@ class minicache:
 
     __getitem__ = __getattr__
 
+    get = __getattr__
+
     def getExpires(self, item):
         data = self.__data__.get(item)
         if data:
@@ -96,6 +98,11 @@ class minicache:
             pass
 
     __delitem__ = __delattr__
+
+    delete = __delattr__
+
+    def clear(self):
+        self.__data__.clear()
     # end: delete
 
     # helpers
