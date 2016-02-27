@@ -47,7 +47,8 @@ print mc            # {'d': 4}
 # get item details
 print mc.d          # 4
 print mc['d']       # 4
-print mc.get('d')   # 4
+print mc.get('d'
+)   # 4
 print mc.getCreated('d')    # 2016-02-26 14:44:04.825725
 print mc.getExpires('d')    # 2016-02-26 14:44:47.111368
 
@@ -55,7 +56,17 @@ print mc.getExpires('d')    # 2016-02-26 14:44:47.111368
 mc.clear()
 print mc            # {}
 
-
 # print configuration
 print mc.getConfig()    # {'behaviour': <MC_BEHAVIOUR.FIFO: 0>, 'expire_seconds': 300, 'max_size': 2}
+
+# more methods
+mc.a=1
+mc.b=['a', 'b', 'c']
+mc.c={'aa': 11, 'bb': 22}
+
+print mc            # {'a': 1, 'c': {'aa': 11, 'bb': 22}, 'b': ['a', 'b', 'c']}
+print mc.keys()     # ['a', 'c', 'b']
+print mc.values()   # [1, {'aa': 11, 'bb': 22}, ['a', 'b', 'c']]
+print mc.items()    # [('a', 1), ('c', {'aa': 11, 'bb': 22}), ('b', ['a', 'b', 'c'])]
+print mc.dict()     # {'a': 1, 'c': {'aa': 11, 'bb': 22}, 'b': ['a', 'b', 'c']}
 ```

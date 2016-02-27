@@ -79,6 +79,18 @@ class minicache:
         if data:
             return data['created']
         return data
+
+    def keys(self):
+        return self.__data__.keys()
+
+    def values(self):
+        return [x['value'] for x in self.__data__.values()]
+
+    def items(self):
+        return [(k, v['value']) for k,v in self.__data__.items()]
+
+    def dict(self):
+        return dict([(k, v['value']) for k,v in self.__data__.items()])
     # end: get
 
     # represent
