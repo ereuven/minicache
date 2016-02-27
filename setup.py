@@ -6,10 +6,10 @@ dependencies = ['enum34']
 setup(
     name='minicache',
     version='1.0',
-    description='Python memory cache',
+    description='Python memory caching utility',
     author='Reuven',
     author_email='reuven@linux.com',
-    url='',
+    url='https://github.com/ereuven/minicache',
     packages=['minicache'],
     requires=dependencies
 )

@@ -8,8 +8,7 @@ If pip exists, will try to install when running _setup.py install_.
 
 ### Install:
 ```bash
-cd ~/Downloads
-tar xzf minicache.tar.gz
+git clone https://github.com/ereuven/minicache
 cd minicache
 python setup.py install
 ```
