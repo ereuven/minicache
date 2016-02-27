@@ -32,7 +32,7 @@ print mc            # {}
 mc.a = [1, 2, 3]
 mc['b'] = 'b'
 mc.set('c', 3)      # key, value
-mc.set('d', 4, 20)  # key, value, custom expiration time (10 seconds)
+mc.set('d', 4, 20)  # key, value, custom expiration time (20 seconds)
 
 print mc            # {'c': 3, 'd': 4}
 
