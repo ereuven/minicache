@@ -1,0 +1,1 @@
+from minicache.minicache_class import minicache, MC_BEHAVIOUR, MC_EXCEPTION
